@@ -1,0 +1,21 @@
+
+.container {
+    width:200px;
+    padding: 100px 80px 400px 200px;
+    background-color: gray;
+}
+
+
+.btn-group button {
+    background-color: gray; 
+    border: 10px solid transparent;
+    color: white; 
+    padding: 10px 0px 0px 10px;  
+    width: 40%;
+    display: inline-block; 
+    display: block;
+    font-size: 20px;
+}
+.btn-group button:hover {
+    background-color: lightgrey;
+}
