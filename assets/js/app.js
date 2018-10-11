@@ -1,9 +1,8 @@
-
 const content = $(".content");
 
 const view = function (event) {
+    $(".content").toggleClass("hide");
     event.preventDefault();
-    content.empty();
     for (let i = 0; i < employeeList.length; i++) {
     const newCard= (`<div class= "card">
         <p>${employeeList[i].name}</p>
@@ -14,13 +13,12 @@ const view = function (event) {
 }
 };
 const showViewDiv = function(event){
+    console.log("hello");
     event.preventDefault();
-    $("#view").toggleClass("hide");
-
 }
 $("#viewEmployee").on("click", view);
 $("#view").on("click", view);
-
+  
 const Add = function (event) {
     event.preventDefault();
     content.empty();
@@ -38,8 +36,8 @@ const Add = function (event) {
 
 const showAddForm = function(event){
     event.preventDefault();
+    content.empty();
     $("#AddEmployee").toggleClass("hide");
-
 }
 
 $("#SubmitEmployee").on("click", Add);
@@ -61,3 +59,5 @@ const showVerifyForm = function(event){
 
 $("#submitEmployeeVerify").on("click",verify)
 $("#verify").on("click",showVerifyForm);
+
+
