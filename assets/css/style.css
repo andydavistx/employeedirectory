@@ -4,7 +4,13 @@
     padding: 100px 80px 400px 200px;
     background-color: gray;
 }
-
+.content {
+    float: right;
+    position: relative;
+    left:500px;
+    bottom: 350px;
+    
+}
 
 .btn-group button {
     background-color: gray; 
@@ -19,3 +25,21 @@
 .btn-group button:hover {
     background-color: lightgrey;
 }
+
+#AddEmployee, #VerifyEmployee{
+    float:right;
+    position: absolute;
+    top: 25px;
+    right:600px;
+    padding: 20px;
+}
+
+#VerifyEmployee{
+    right:600px;
+    top: 250px;
+}
+
+.hide{
+    display: none;
+}
+

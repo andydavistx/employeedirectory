@@ -19,9 +19,27 @@
       <button id="Update">Update</button>
       <button id="Delete">Delete</button>
     </div>
+    <div id="viewEmployee" class="hide"></div>
     <div class="content"></div>
   </div>
-  
+  <form id="AddEmployee" class="hide">
+    Name:<br>
+    <input type="text" id="name" />
+    <br><br>
+    officeNum:<br>
+    <input type="text" id="officeNumber" />
+    <br><br>
+    phoneNum:<br>
+    <input type="text" id="phoneNumber" />
+    <br><br>
+    <input type="submit" value="Submit" id="SubmitEmployee">
+  </form> 
+  <form id="VerifyEmployee"  class="hide">
+    Name:<br>
+    <input type="text" id="nameVerify" placeholder="Enter Employee Name"/>
+    <br><br>
+    <input type="submit" value="Submit" id="SubmitEmployeeVerify">
+  </form>
     <script src="./assets/js/employeeList.js"></script>
     <script src="./assets/js/dom.js"></script>
     <script src="./assets/js/app.js"></script>
